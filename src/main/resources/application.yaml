@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/Clould_Vender?useSSL=false
+    username: root
+    password: Radhabhav1!
+
+
+
+
+
+
+#JPA Settings
+  jpa.hibernate.ddl_auto: create
+
+
+
+
+
+
+

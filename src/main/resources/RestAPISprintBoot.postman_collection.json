@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "20e480d2-82dd-4222-bc6d-b9845a773113",
+		"name": "RestAPISprintBoot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11938545",
+		"_collection_link": "https://gn-testingasservice.postman.co/workspace/Team-Workspace~9b3824ad-c654-4430-8929-d8ecafe1fbf3/collection/11938545-20e480d2-82dd-4222-bc6d-b9845a773113?action=share&source=collection_link&creator=11938545"
+	},
+	"item": [
+		{
+			"name": "CreateNewVender",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"venderId\": \"C2\",\r\n    \"venderName\": \"VenderTwo\",\r\n    \"venderAddrss\": \"Address two\",\r\n    \"venderPhoneNumber\": 2222\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cloudVender",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cloudVender"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllVenders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cloudVender",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cloudVender"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetOneVender",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cloudVender/C1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cloudVender",
+						"C1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateVender",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"venderId\": \"C1\",\r\n    \"venderName\": \"Vender1_Updated\",\r\n    \"venderAddrss\": \"Address one Updated\",\r\n    \"venderPhoneNumber\": 9999\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cloudVender",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cloudVender"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cloudVender/C1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cloudVender",
+						"C1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
