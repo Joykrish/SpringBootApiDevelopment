@@ -5,6 +5,8 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
+
+
 import first.sprintbootProject.ApplicationdemoProject.Exception.CloudVenderNotFoundException;
 import first.sprintbootProject.ApplicationdemoProject.Model.CloudVender;
 import first.sprintbootProject.ApplicationdemoProject.Repository.CloudVenderRepository;
@@ -52,5 +54,11 @@ public class CVServiceImplement implements CloudVenderService{
 		
 		return cloudVenderRepository.findAll();
 	}
+	
+	@Override
+    public List<CloudVender> getByVendorName(String vendorName)
+    {
+        return cloudVenderRepository.findByVenderName(vendorName);
+    }
 
 }

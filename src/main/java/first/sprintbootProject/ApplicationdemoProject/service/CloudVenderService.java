@@ -10,7 +10,7 @@ public interface CloudVenderService {
 	public String updateCloudVender(CloudVender cloudVender);
 	public String deleteCloudVender(String cloudVenderID);
 	public CloudVender getCloudVender(String cloudVenderID);
-	
+	public List<CloudVender> getByVendorName(String couldVenderName);
 	public List<CloudVender> getAllCloudVender();
 
 }
